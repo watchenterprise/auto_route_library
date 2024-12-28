@@ -5,7 +5,7 @@ class MissingRequiredParameterError extends FlutterError {
   /// default construct
   MissingRequiredParameterError(String message)
       : super.fromParts(<DiagnosticsNode>[
-          ErrorSummary('Missing or invalid required parameter'),
+          ErrorSummary('Missing or invalid required parameter $message'),
           ErrorDescription(message),
         ]);
 }

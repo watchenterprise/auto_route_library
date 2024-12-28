@@ -114,7 +114,7 @@ class AutoRouterDelegate extends RouterDelegate<UrlState> with ChangeNotifier {
     } else if (platformDeepLink.isValid) {
       return _handleDeepLink(platformDeepLink);
     } else {
-      throw FlutterError("Can not resolve initial route");
+      throw FlutterError("Can not resolve initial route: $configuration");
     }
   }
 
